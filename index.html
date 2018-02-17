@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman game</title>
+</head>
+
+<header>
+    Hangman
+</header>
+
+<body>
+    <div id="game">
+        <h1> Press any key to get started!</h1>
+        <h1>Wins</h1>
+        <h1>Current Word</h1>
+        <h1>Number of Guesses Remaining</h1>
+        <h1>Letters Already Guessed</h1>
+    </div>    
+</body>
+    <script>
+        var wordBank = ["Cupid", "Hearts", "Romance"];
+        var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "X", "Y", "Z"];
+        var score = 0;
+        var underScores = "_";
+        var guesses = 5;
+        var currentWord = " ";
+        document.onkeyup = function(letterGuessed) {
+            var userGuess = letterGuessed.key;
+            alert("You guessed " + userGuess.toUpperCase());
+            
+            for(i=0; i< letters.length; i++){
+                if (userGuess === letters.charAt(i) && charAt(i) === charAt(wordBank)){
+                    innerHTML.letters;
+                    console.log(userguess)
+                }
+            }
+        }
+    </script>
+</html>
